@@ -34,7 +34,7 @@ import max7219.led as led
 # Audio recording parameters
 RATE = 16000
 CHUNK = int(RATE / 10)  # 100ms
-device = led.matrix()
+device = led.matrix(2)
 
 class MicrophoneStream(object):
     """Opens a recording stream as a generator yielding the audio chunks."""
